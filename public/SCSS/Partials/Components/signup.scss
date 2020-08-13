@@ -1,0 +1,26 @@
+.signup-area{
+    padding: 20px;
+    border-radius: 14px;
+    max-width: 601px;
+    margin-top: 20px;
+    margin: 0 auto;
+    border: 1px solid white;
+    form{
+        .form-group{
+            display: none;
+            label{
+                font-weight: 500;
+            }
+            &.viewed{
+                display: block;
+            }
+        }
+        
+    }
+    .nav{
+        display: block;
+        .nav-item{
+            display: inline-block;
+        }
+    }
+}

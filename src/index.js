@@ -72,7 +72,7 @@ app.use('/',router);
 
 
 app.get('/', (req, res) => {
-    res.render('index', {
+    res.render('intro', {
     })
 });
 
