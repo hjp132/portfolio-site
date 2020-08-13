@@ -1,0 +1,34 @@
+{
+  "name": "portfolio-site",
+  "version": "1.0.0",
+  "description": "portfolio-site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "style": "sass public/SCSS/style.scss public/CSS/style.css",
+    "mongo": "/Users/harry/mongodb/bin/mongod.exe --dbpath=/Users/harry/mongodb-data"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hjp132/portfolio-site.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hjp132/portfolio-site/issues"
+  },
+  "homepage": "https://github.com/hjp132/portfolio-site#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "grunt": "^1.1.0",
+    "handlebars": "^4.7.6",
+    "hbs": "^4.1.1",
+    "jquery": "^3.5.1",
+    "mongodb": "^3.5.9",
+    "mongoose": "^5.9.18",
+    "nodemon": "^2.0.4",
+    "sass": "^1.26.8"
+  }
+}
