@@ -1,9 +1,12 @@
-@charset "UTF-8";
 @-ms-viewport {
   width: device-width;
 }
+body {
+  background: #f5f5f5;
+}
+
 .dark-mode {
-  background-color: #303030;
+  background-color: #000000;
   color: white;
 }
 
@@ -57,126 +60,92 @@ h1.title {
   display: inline-block;
 }
 
-.form-control {
-  width: 50%;
-  display: inline-block;
-}
-
-.auth {
-  display: inline-block;
-  width: 30%;
-  font-weight: 600;
-  font-size: 21px;
-  color: red !important;
-}
-
-.green {
-  color: green !important;
-}
-
-.DDD-dob, .YYYY-dob {
-  display: inline-block;
-}
-
-.passwordCriteria {
-  padding: 20px;
-  border-radius: 14px;
-  max-width: 601px;
-  margin-top: 20px;
-  margin: 5px auto;
-  border: 1px solid white;
-  display: none;
-}
-.passwordCriteria .nav {
-  display: block;
-}
-.passwordCriteria .nav .nav-item {
-  display: inline-block;
-}
-.passwordCriteria #numerals, .passwordCriteria #specChar, .passwordCriteria #timeinHour, .passwordCriteria #hexCode, .passwordCriteria #brazilCode {
-  display: none;
-}
-.passwordCriteria p {
-  padding: 1px 35px;
-  font-size: 18px;
-}
-
-/* Add a green text color and a checkmark when the requirements are right */
-.valid {
-  color: green;
-}
-
-.valid:before {
-  position: relative;
-  left: -35px;
-  content: "●";
-}
-
-/* Add a red text color and an "x" when the requirements are wrong */
-.invalid {
-  color: red;
-}
-
-.invalid:before {
-  position: relative;
-  left: -35px;
-  content: "●";
-}
-
-.countdown {
-  float: right;
-  background-color: orange;
-  border-radius: 7px;
-  padding: 2px;
+.title {
+  font-size: 90px;
+  font-weight: 500;
+  text-align: center;
 }
 
 header {
-  background-color: #303030;
   display: inline-block;
-  padding: 20px;
   vertical-align: middle;
   width: 100%;
-  color: white;
-  margin-bottom: 50px;
+  color: black;
+  margin: 50px 0;
+  padding: 0 50px;
+  position: fixed;
+  top: 0;
 }
 header .nav-logo a {
-  color: white;
+  color: black;
 }
 header .nav-logo {
   float: left;
   padding: 8px 16px;
   display: block;
+  font-weight: 700;
 }
 header .nav-section {
-  float: right;
-  color: white;
+  position: fixed;
+  top: 9%;
+  color: black;
+}
+header .nav-section .nav {
+  display: block;
 }
 header .nav-section .nav .nav-item .nav-link {
-  color: white;
+  color: black;
 }
 
-.signup-area {
-  padding: 20px;
-  border-radius: 14px;
-  max-width: 601px;
-  margin-top: 20px;
+.content {
+  width: 80%;
+  margin: 50px 0 0 210px;
+  background: #f5f5f5;
+}
+
+.seperator {
+  height: 19px;
+  background: azure;
+  width: 30%;
+  margin: 15px auto;
+}
+
+.box {
+  width: 50%;
+  height: 300px;
+  background: white;
+  display: flex;
+  padding: 30px;
   margin: 0 auto;
-  border: 1px solid white;
+  border-radius: 8px;
 }
-.signup-area form .form-group {
-  display: none;
-}
-.signup-area form .form-group label {
-  font-weight: 500;
-}
-.signup-area form .form-group.viewed {
-  display: block;
-}
-.signup-area .nav {
-  display: block;
-}
-.signup-area .nav .nav-item {
+.box .picturebox {
   display: inline-block;
+  background: azure;
+  height: 100%;
+  width: 30%;
+  border-radius: 8px;
+}
+.box .contentbox {
+  display: inline-block;
+  vertical-align: top;
+  background: white;
+  height: 100%;
+  width: 69%;
+  padding: 0 10px;
+  margin: 0;
+}
+.box .boxHeader {
+  font-size: 26px;
+}
+.box .boxHeader:before {
+  content: "";
+  width: 14px;
+  height: 14px;
+  background-color: #D6D6D6;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */

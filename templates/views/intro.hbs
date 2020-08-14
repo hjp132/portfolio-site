@@ -9,22 +9,30 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     {{!-- <link rel="stylesheet" href="css/index.css" type="text/css"> --}}
     <link rel="stylesheet" href="CSS/style.css" type="text/css">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+{{>header}}
+<body>
+    <div class="content">
+        <div class="title"> My Portfolio. </div>
+        <div class="seperator"></div>
+        <div class="bio box">
+            <div class="picturebox"></div>
+            <div class="contentbox">
+                <a class="boxHeader" id="bio">About me</a>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at nisi ac velit rutrum iaculis. Duis condimentum in ligula at rhoncus. Vivamus lobortis ligula turpis, ut mollis mauris viverra eu. Donec a arcu arcu. Fusce ornare tortor ut faucibus viverra. Phasellus sed risus id libero pretium posuere vitae ut ipsum. Quisque erat magna, gravida eu magna at, commodo porttitor libero. Mauris rutrum condimentum turpis, ac iaculis lorem porta at. Nunc at efficitur arcu, id fermentum ligula.</p>
+            </div>
+        </div>
 
-<body class="dark-mode">
-    {{>header}}
-<div class="container dark-mode">
-    <div class="center">
-        <h1 class="title">Harry Palmer</h1>
-        <h4>(Me.)</h4>
-        <span style='font-size:35px;'>&#8650;</span>
     </div>
-
-</div>
-
-
-
 </body>
+
+
+
+
+
+
+
+
 
 </html>

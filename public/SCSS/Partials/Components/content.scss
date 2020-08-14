@@ -1,0 +1,51 @@
+.content{
+    width: 80%;
+    margin: 50px 0 0 150px;
+    background: #f5f5f5;
+}
+
+.seperator{
+    height: 19px;
+    background: azure;
+    width: 30%;
+    margin: 15px auto;
+}
+
+.box{
+    width: 50%;
+    height: 300px;
+    background: white;
+    display: flex;
+    padding: 30px;
+    margin: 0 auto;
+    border-radius: 8px;
+    .picturebox{
+        display: inline-block;
+        background: azure;
+        height: 100%;
+        width: 30%;
+        border-radius: 8px;
+    }
+    .contentbox{
+        display: inline-block;
+        vertical-align: top;
+        background: white;
+        height: 100%;
+        width: 69%;
+        padding: 0 10px;
+        margin: 0;
+    }
+    .boxHeader{
+        font-size: 26px;
+        
+    }
+    .boxHeader:before{
+            content: "";
+            width: 14px;
+            height: 14px;
+            background-color: #D6D6D6;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 10px;
+    }
+}
