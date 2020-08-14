@@ -99,7 +99,7 @@ header .nav-section .nav .nav-item .nav-link {
 
 .content {
   width: 80%;
-  margin: 50px 0 0 210px;
+  margin: 50px 0 0 150px;
   background: #f5f5f5;
 }
 
@@ -117,6 +117,7 @@ header .nav-section .nav .nav-item .nav-link {
   display: flex;
   padding: 30px;
   margin: 0 auto;
+  margin-bottom: 30px;
   border-radius: 8px;
 }
 .box .picturebox {
