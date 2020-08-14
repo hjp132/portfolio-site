@@ -2,6 +2,10 @@
     width: device-width;
   }
 
+body{
+  font-family: 'Roboto';
+}
+
 @import "Templates/templates.scss", 
 "Partials/partials.scss",
 "vars.scss"

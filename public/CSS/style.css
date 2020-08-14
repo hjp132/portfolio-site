@@ -2,6 +2,10 @@
 @-ms-viewport {
   width: device-width;
 }
+body {
+  font-family: "Roboto";
+}
+
 .dark-mode {
   background-color: #303030;
   color: white;
@@ -139,6 +143,9 @@ header {
   color: white;
   margin-bottom: 50px;
 }
+header .navbar {
+  background-color: #303030;
+}
 header .nav-logo a {
   color: white;
 }
@@ -153,6 +160,17 @@ header .nav-section {
 }
 header .nav-section .nav .nav-item .nav-link {
   color: white;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  left: 0;
+}
+
+.sticky + .content {
+  padding-top: 60px;
 }
 
 .signup-area {
@@ -177,6 +195,35 @@ header .nav-section .nav .nav-item .nav-link {
 }
 .signup-area .nav .nav-item {
   display: inline-block;
+}
+
+.bio-block {
+  background: white;
+  height: 500px;
+  width: 100%;
+  color: black;
+}
+.bio-block .heading {
+  font-family: "Roboto";
+  font-size: 40px;
+  margin-left: 20px;
+}
+
+.bio-grouping {
+  margin: 0 25px;
+}
+
+.profile-picture {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.bio {
+  display: inline-block;
+  margin: 0 20px;
+  border-left: 1px solid black;
+  padding: 0 30px;
+  width: 80%;
 }
 
 /*# sourceMappingURL=style.css.map */

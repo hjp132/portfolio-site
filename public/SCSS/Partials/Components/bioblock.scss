@@ -1,0 +1,28 @@
+.bio-block{
+    background: white;
+    height: 500px;
+    width: 100%;
+    color: black;
+    .heading{
+        font-family: 'Roboto';
+        font-size: 40px;
+        margin-left: 20px;
+    }
+}
+
+.bio-grouping{
+    margin: 0 25px;
+}
+
+.profile-picture{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.bio{
+    display: inline-block;
+    margin: 0 20px;
+    border-left: 1px solid black;
+    padding: 0 30px;
+    width: 80%;
+}
