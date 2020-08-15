@@ -1,52 +1,92 @@
-.content{
-    width: 80%;
-    margin: 50px 0 0 150px;
-    background: #f5f5f5;
+body{
+    font-family: 'Roboto';
 }
 
-.seperator{
-    height: 19px;
-    background: azure;
-    width: 30%;
-    margin: 15px auto;
-}
-
-.box{
-    width: 50%;
-    height: 300px;
-    background: white;
+.intro{
+    background: #1b2a2f;
     display: flex;
-    padding: 30px;
-    margin: 0 auto;
-    margin-bottom: 30px;
-    border-radius: 8px;
-    .picturebox{
-        display: inline-block;
-        background: azure;
-        height: 100%;
-        width: 30%;
-        border-radius: 8px;
+    height: 100vh;
+    width: 100vw;
+    flex-flow: row wrap;
+    min-height: 560px;
+    padding-left: 130px;
+    padding-top: 100px;
+    .intro-title{
+        font-size: 128px;
+        color: white;
+        font-family: 'Roboto';
+        font-weight: 700;
+        height: 50%;
     }
-    .contentbox{
-        display: inline-block;
-        vertical-align: top;
+    .intro-image{
         background: white;
-        height: 100%;
-        width: 69%;
-        padding: 0 10px;
-        margin: 0;
     }
-    .boxHeader{
-        font-size: 26px;
-        
+    .seperator{
+        height: 18px;
+        width: 13vw;
+        display: block;
+        background: white;
+        position: absolute;
+        margin-right: 62vw;
+        top: 31vh;
     }
-    .boxHeader:before{
-            content: "";
-            width: 14px;
-            height: 14px;
-            background-color: #D6D6D6;
-            border-radius: 50%;
-            display: inline-block;
-            margin-right: 10px;
+    p{
+        color: white;
+        height: 50px;
+        width: 380px;
+        display: block;
+        position: absolute;
+        top:34vh;
     }
 }
+
+.section{
+    width: 100vw;
+    display: flex;
+    overflow: hidden;
+    min-height: 278px;
+    padding: 50px 0;
+    background-image: linear-gradient(45deg, #56cad5, #247ad4);
+    .container{
+        padding-top: 6.25rem;
+        max-width: 100%;
+        width: 73.75rem;
+        align-items: center;
+        margin: -6.25rem auto 0;
+        .container-left{
+            width: 50%;
+            color: white;
+            text-align: left;
+            z-index: 1;
+            padding: 0;
+            margin-right: auto;
+            h2{
+                width: 100%;
+                text-transform: uppercase;
+                font-weight: 700;
+                line-height: 1;
+                font-size: 50px;
+                margin: 50px 0px 0px;
+            }
+            .container-linebreak{
+                margin: 1.875rem 0;
+                display: block;
+                background-color: #fff;
+                height: 4px;
+                width: 40px;
+            }
+        }
+        .container-right{
+            position: absolute;
+            width: 350px;
+            z-index: 3;
+            max-width: 350px;
+            top: 100px;
+            left: auto;
+            bottom: 0;
+            right: 9.5%;
+            margin: auto;
+        }
+    }
+}
+

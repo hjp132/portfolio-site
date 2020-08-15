@@ -2,7 +2,7 @@
   width: device-width;
 }
 body {
-  background: #f5f5f5;
+  background: orange;
 }
 
 .dark-mode {
@@ -60,12 +60,6 @@ h1.title {
   display: inline-block;
 }
 
-.title {
-  font-size: 90px;
-  font-weight: 500;
-  text-align: center;
-}
-
 header {
   display: inline-block;
   vertical-align: middle;
@@ -97,56 +91,95 @@ header .nav-section .nav .nav-item .nav-link {
   color: black;
 }
 
-.content {
-  width: 80%;
-  margin: 50px 0 0 150px;
-  background: #f5f5f5;
+body {
+  font-family: "Roboto";
 }
 
-.seperator {
-  height: 19px;
-  background: azure;
-  width: 30%;
-  margin: 15px auto;
-}
-
-.box {
-  width: 50%;
-  height: 300px;
-  background: white;
+.intro {
+  background: #1b2a2f;
   display: flex;
-  padding: 30px;
-  margin: 0 auto;
-  margin-bottom: 30px;
-  border-radius: 8px;
+  height: 100vh;
+  width: 100vw;
+  flex-flow: row wrap;
+  min-height: 560px;
+  padding-left: 130px;
+  padding-top: 100px;
 }
-.box .picturebox {
-  display: inline-block;
-  background: azure;
-  height: 100%;
-  width: 30%;
-  border-radius: 8px;
+.intro .intro-title {
+  font-size: 128px;
+  color: white;
+  font-family: "Roboto";
+  font-weight: 700;
+  height: 50%;
 }
-.box .contentbox {
-  display: inline-block;
-  vertical-align: top;
+.intro .intro-image {
   background: white;
-  height: 100%;
-  width: 69%;
-  padding: 0 10px;
-  margin: 0;
 }
-.box .boxHeader {
-  font-size: 26px;
+.intro .seperator {
+  height: 18px;
+  width: 13vw;
+  display: block;
+  background: white;
+  position: absolute;
+  margin-right: 62vw;
+  top: 31vh;
 }
-.box .boxHeader:before {
-  content: "";
-  width: 14px;
-  height: 14px;
-  background-color: #D6D6D6;
-  border-radius: 50%;
-  display: inline-block;
-  margin-right: 10px;
+.intro p {
+  color: white;
+  height: 50px;
+  width: 380px;
+  display: block;
+  position: absolute;
+  top: 34vh;
+}
+
+.section {
+  width: 100vw;
+  display: flex;
+  overflow: hidden;
+  min-height: 50rem;
+  background-image: linear-gradient(45deg, #56cad5, #247ad4);
+}
+.section .container {
+  padding-top: 6.25rem;
+  max-width: 100%;
+  width: 73.75rem;
+  align-items: center;
+  margin: -6.25rem auto 0;
+}
+.section .container .container-left {
+  width: 50%;
+  color: white;
+  text-align: left;
+  z-index: 1;
+  padding: 0;
+  margin-right: auto;
+}
+.section .container .container-left h2 {
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1;
+  font-size: 50px;
+  margin: 50px 0px 0px;
+}
+.section .container .container-left .container-linebreak {
+  margin: 1.875rem 0;
+  display: block;
+  background-color: #fff;
+  height: 4px;
+  width: 40px;
+}
+.section .container .container-right {
+  position: absolute;
+  width: 350px;
+  z-index: 3;
+  max-width: 350px;
+  top: 100px;
+  left: auto;
+  bottom: 0;
+  right: 9.5%;
+  margin: auto;
 }
 
 /*# sourceMappingURL=style.css.map */
