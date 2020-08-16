@@ -1,5 +1,6 @@
 body{
     font-family: 'Roboto';
+    overflow-x: hidden
 }
 
 .intro{
@@ -46,7 +47,18 @@ body{
     overflow: hidden;
     min-height: 278px;
     padding: 50px 0;
-    background-image: linear-gradient(45deg, #56cad5, #247ad4);
+    color: white;
+    &.blue{
+        background-image: linear-gradient(45deg, #56cad5, #247ad4);
+        color: white;
+    }
+    &.orange{
+        color: white;
+        background: #ff943b;
+    }
+    &.darkgrey{
+        background: #1b2a2f;
+    }
     .container{
         padding-top: 6.25rem;
         max-width: 100%;
@@ -55,7 +67,7 @@ body{
         margin: -6.25rem auto 0;
         .container-left{
             width: 50%;
-            color: white;
+            color: inherit;
             text-align: left;
             z-index: 1;
             padding: 0;
@@ -89,4 +101,20 @@ body{
         }
     }
 }
+
+.langauges{
+    background: #f5f5f5;
+    padding: 3.125rem 5rem;
+    .languages-content{
+        margin-right: auto;
+        margin-left: auto;
+        padding-left: 30px;
+        padding-right: 30px;
+        .row{
+            margin-left: -10px;
+            margin-right: -10px;
+        }
+    }
+}
+
 
