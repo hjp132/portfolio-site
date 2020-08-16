@@ -7,42 +7,42 @@
     <title>{{title}}</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    {{!-- <link rel="stylesheet" href="css/index.css" type="text/css"> --}}
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <link rel="stylesheet" href="CSS/style.css" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-{{>header}}
 <body>
+    
     <div class="content">
-        <div class="title"> My Portfolio. </div>
-        <div class="seperator"></div>
-        <div class="bio box">
-            <div class="picturebox"></div>
-            <div class="contentbox">
-                <a class="boxHeader" id="bio">About me</a>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at nisi ac velit rutrum iaculis. Duis condimentum in ligula at rhoncus. Vivamus lobortis ligula turpis, ut mollis mauris viverra eu. Donec a arcu arcu. Fusce ornare tortor ut faucibus viverra. Phasellus sed risus id libero pretium posuere vitae ut ipsum. Quisque erat magna, gravida eu magna at, commodo porttitor libero. Mauris rutrum condimentum turpis, ac iaculis lorem porta at. Nunc at efficitur arcu, id fermentum ligula.</p>
-            </div>
-        </div>
-        <div class="bio box">
-            <div class="contentbox">
-                <a class="boxHeader" id="bio">Education</a>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at nisi ac velit rutrum iaculis. Duis condimentum in ligula at rhoncus. Vivamus lobortis ligula turpis, ut mollis mauris viverra eu. Donec a arcu arcu. Fusce ornare tortor ut faucibus viverra. Phasellus sed risus id libero pretium posuere vitae ut ipsum. Quisque erat magna, gravida eu magna at, commodo porttitor libero. Mauris rutrum condimentum turpis, ac iaculis lorem porta at. Nunc at efficitur arcu, id fermentum ligula.</p>
-            </div>
-            <div class="picturebox"></div>
-        </div>
-        <div class="bio box">
-            <div class="picturebox"></div>
-            <div class="contentbox">
-                <a class="boxHeader" id="bio">Work</a>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at nisi ac velit rutrum iaculis. Duis condimentum in ligula at rhoncus. Vivamus lobortis ligula turpis, ut mollis mauris viverra eu. Donec a arcu arcu. Fusce ornare tortor ut faucibus viverra. Phasellus sed risus id libero pretium posuere vitae ut ipsum. Quisque erat magna, gravida eu magna at, commodo porttitor libero. Mauris rutrum condimentum turpis, ac iaculis lorem porta at. Nunc at efficitur arcu, id fermentum ligula.</p>
-            </div>
-        </div>
+        <section class="intro">
+            <h2 class="intro-title">MY </BR> PORTFOLIO </h2>
+        </section>
+    
+        {{>section colour="blue" title="About me" text="I'm Harry, blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah"}}
+
+
+        {{>section colour="orange" title="Work Experience" text="blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah"}}
+        
+        {{>section colour="darkgrey" title="Education" text="blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah"}}
+
+        
+
+        <section class="languages">
+            <img src="images/compilation.png">
+        </section>
+
+        {{>section colour="black" title="My Projects" text="blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah"}}
+        
+
+        {{!-- {{>section colour="" title="" text=""}} --}}
+
+        
+
+        
+
 
    
 
-        <div class="projects">
-            <a class="title">My Projects</a>
-        </div> 
     </div>
 </body>
 
