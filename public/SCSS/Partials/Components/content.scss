@@ -3,6 +3,19 @@ body{
     overflow-x: hidden
 }
 
+@media (max-width: 800px) {
+    img{
+        width: 50%;
+    }
+    .container-left {
+        width: 100% !important;
+        text-align: center !important;
+    }
+    .container-linebreak{
+        width: 100% !important;
+    }
+}
+
 .intro{
     background: #1b2a2f;
     display: flex;
@@ -13,7 +26,7 @@ body{
     padding-left: 130px;
     padding-top: 100px;
     .intro-title{
-        font-size: 128px;
+        font-size: 10vw;
         color: white;
         font-family: 'Roboto';
         font-weight: 700;
