@@ -11,7 +11,7 @@ const port = process.env.PORT || 3000;
 app.set('port', process.env.PORT);
 
 app.listen(port, () => {
-    console.log('Server is up on port ' + port) 
+    console.log('Server is up on port ' + port)
 });
 
 
@@ -27,7 +27,7 @@ app.use(express.static(path.join(__dirname, '/public')));
 
 
 const router = express.Router();
-app.use('/',router);
+app.use('/', router);
 
 // CRUD create read update delete
 
@@ -61,7 +61,7 @@ app.use('/',router);
 // router.get('/', function(req, res) {
 //     // Get the only one db instance in our app
 //     var db = req.db;
- 
+
 //     // Fetch from 'users' collection
 //     var userCollection = db.get("chest-1");
 //     userCollection.find({}, {}, function(e, docs) {
@@ -73,6 +73,11 @@ app.use('/',router);
 
 app.get('/', (req, res) => {
     res.render('intro', {
+    })
+});
+
+app.get('/projects', (req, res) => {
+    res.render('projects', {
     })
 });
 
