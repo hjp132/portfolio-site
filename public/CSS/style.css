@@ -187,7 +187,7 @@ body {
   width: 156px;
   height: 227px;
   margin: 0 30px 30px 0;
-  display: flex;
+  display: inline-block;
   background: #247ad4;
   justify-content: center;
   align-items: center;
@@ -195,12 +195,40 @@ body {
 }
 .tc-Container .tc-TextContainer {
   text-align: center;
+  background: #c3c3c3;
+  border-radius: 5px 5px 0 0;
 }
 .tc-Container .tc-TextContainer span .tc-Title {
   font-size: 17px;
+  margin: 0;
+  color: black;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 .tc-Container .tc-TextContainer span .tc-Subject {
   font-size: 17px;
+  margin: 0;
+  color: #756f6f;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.clickerBackground {
+  background-image: url("../../../images/clickerimg.png");
+  background-color: #cccccc;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.CIUBackground {
+  background-image: url("../../../images/discordimage.jpg");
+  background-color: #cccccc;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
 
 .main {
