@@ -28,7 +28,22 @@ body{
     min-height: 560px;
     justify-content: center;
     align-content: center;
+}
 
+.left-side{
+    width: 80px;
+    height: 100%;
+    background: white;
+    left: 0;
+    position: fixed;
+    ul{
+        list-style: none;
+        font-size: 38px;
+        margin: 0;
+        padding: 24px;
+        color: rgb(188, 190, 192);
+        margin-top: 250px;
+    }
 }
 
 .nav-container{

@@ -96,6 +96,22 @@ body {
   align-content: center;
 }
 
+.left-side {
+  width: 80px;
+  height: 100%;
+  background: white;
+  left: 0;
+  position: fixed;
+}
+.left-side ul {
+  list-style: none;
+  font-size: 38px;
+  margin: 0;
+  padding: 24px;
+  color: #bcbec0;
+  margin-top: 250px;
+}
+
 .nav-container {
   display: block;
 }
