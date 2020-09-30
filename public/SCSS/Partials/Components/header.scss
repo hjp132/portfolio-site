@@ -1,36 +1,6 @@
 @import "../../vars.scss";
 header{
     display: inline-block;
-    vertical-align: middle;
-    width: 100%;
     color: black;
     margin: 50px 0;
-    padding: 0 50px;
-    position: fixed;
-    top: 0;
-
-    .nav-logo a {
-        color: black;
-        
-    }
-    .nav-logo{
-        float: left;
-        padding: 8px 16px;
-        display: block;
-        font-weight: 700;
-        
-    }
-    .nav-section{
-        position: fixed;
-        top: 9%;
-        color: black;
-        .nav{
-            display: block;
-            .nav-item{
-                .nav-link{
-                    color: black;
-                }
-            }
-        }
-    }
 }

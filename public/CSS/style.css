@@ -58,38 +58,17 @@ h1.title {
 
 header {
   display: inline-block;
-  vertical-align: middle;
-  width: 100%;
   color: black;
   margin: 50px 0;
-  padding: 0 50px;
-  position: fixed;
-  top: 0;
-}
-header .nav-logo a {
-  color: black;
-}
-header .nav-logo {
-  float: left;
-  padding: 8px 16px;
-  display: block;
-  font-weight: 700;
-}
-header .nav-section {
-  position: fixed;
-  top: 9%;
-  color: black;
-}
-header .nav-section .nav {
-  display: block;
-}
-header .nav-section .nav .nav-item .nav-link {
-  color: black;
 }
 
 body {
   font-family: "Roboto";
   overflow-x: hidden;
+  opacity: 0;
+  transition: opacity 2s;
+  -webkit-transition: opacity 2s;
+  /* Safari */
 }
 
 @media (max-width: 800px) {
@@ -101,43 +80,59 @@ body {
     width: 100% !important;
     text-align: center !important;
   }
+
+  .container-linebreak {
+    width: 100% !important;
+  }
 }
 .intro {
-  background: #1b2a2f;
+  background: white;
   display: flex;
   height: 100vh;
   width: 100vw;
   flex-flow: row wrap;
   min-height: 560px;
-  padding-left: 130px;
-  padding-top: 100px;
+  justify-content: center;
+  align-content: center;
 }
-.intro .intro-title {
-  font-size: 10vw;
-  color: white;
-  font-family: "Roboto";
-  font-weight: 700;
-  height: 50%;
-}
-.intro .intro-image {
+
+.left-side {
+  width: 80px;
+  height: 100%;
   background: white;
+  left: 0;
+  position: fixed;
 }
-.intro .seperator {
-  height: 18px;
-  width: 13vw;
-  display: block;
-  background: white;
-  position: absolute;
-  margin-right: 62vw;
-  top: 31vh;
+.left-side ul {
+  list-style: none;
+  font-size: 38px;
+  margin: 0;
+  padding: 24px;
+  color: #bcbec0;
+  margin-top: 250px;
 }
-.intro p {
-  color: white;
-  height: 50px;
-  width: 380px;
+
+.nav-container {
   display: block;
-  position: absolute;
-  top: 34vh;
+}
+.nav-container .nav-logo {
+  display: inline-block;
+  font-size: 46px;
+  width: 49%;
+  vertical-align: top;
+  border-right: 1px solid black;
+}
+.nav-container .nav-listContainer {
+  display: inline-block;
+  font-size: 16px;
+  width: 49%;
+}
+.nav-container .nav-listContainer ul {
+  list-style: none;
+}
+.nav-container .nav-listContainer ul li a {
+  color: black;
+  text-decoration: none;
 }
 
 .section {
@@ -204,17 +199,56 @@ body {
   margin: auto;
 }
 
-.languages {
-  background: #77929f;
-  margin: 0 auto;
-  display: block;
-  padding: 60px 0;
-  width: 100vw;
+.tc-Container {
+  width: 156px;
+  height: 227px;
+  margin: 0 30px 30px 0;
+  display: inline-block;
+  background: #247ad4;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7px;
 }
-.languages img {
-  margin: 0 auto;
-  align-content: center;
-  display: block;
+.tc-Container .tc-TextContainer {
+  text-align: center;
+  background: #c3c3c3;
+  border-radius: 5px 5px 0 0;
+}
+.tc-Container .tc-TextContainer span .tc-Title {
+  font-size: 17px;
+  margin: 0;
+  color: black;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.tc-Container .tc-TextContainer span .tc-Subject {
+  font-size: 17px;
+  margin: 0;
+  color: #756f6f;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.clickerBackground {
+  background-image: url("../../../images/clickerimg.png");
+  background-color: #cccccc;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.CIUBackground {
+  background-image: url("../../../images/discordimage.jpg");
+  background-color: #cccccc;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.main {
+  margin: 0 80px;
 }
 
 /*# sourceMappingURL=style.css.map */

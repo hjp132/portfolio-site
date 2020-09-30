@@ -17,14 +17,19 @@
 </head>
 
 <body onload="document.body.style.opacity='1'">
+    <div class='main'>
+        <header class='header'>
+            {{>nav}}
+        </header>
+        {{>leftBar}}
+        <div class='projectContent'>
+            {{>titleCard title='Clicker App' subject='Learning' background='clickerBackground'}}
+            {{>titleCard title='CanIUseBot' subject='Hobby Bot' background='CIUBackground'}}
+            {{>titleCard title='BAD UI' subject='Hobby site'}}
 
-    <div class="content">
-        <section class="intro">
-            {{>leftBar}}
-            <div class='center-intro'>
-                {{>nav}}
-            </div>
-        </section>
+        </div>
+    </div>
+
 
 
 
