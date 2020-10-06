@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/hjp132/portfolio-site#readme",
   "dependencies": {
+    "copy-to-clipboard": "^3.3.1",
     "express": "^4.17.1",
     "grunt": "^1.1.0",
     "handlebars": "^4.7.6",

@@ -86,6 +86,11 @@ app.get('/profile', (req, res) => {
     })
 });
 
+app.get('/projects/clickerapp', (req, res) => {
+    res.render('./projects/ClickerApp', {
+    })
+});
+
 
 
 

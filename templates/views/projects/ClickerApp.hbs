@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>HJP Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link rel="stylesheet" href="../CSS/style.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/bee9def511.js" crossorigin="anonymous"></script>
+</head>
+
+<body onload="document.body.style.opacity='1'">
+    <div class='main'>
+        <header class='header'>
+            {{>nav}}
+        </header>
+        {{>leftBar}}
+        <div class='projectContent'>
+            <h2>Clicker App</h2>
+            <p>This app is my first ReactNative app and was used to get an understanding of the fundamentals
+                of developing using ReactNative
+            </p>
+            <div class='article'>
+                <div class='blurb'>
+                    <h2>The concept</h2>
+                    <p>The concept of this app is the same as anything from the clicker genre, you click
+                        this first button to make the value go up and then purchase further upgrades to then
+                        increase the amount you are earning per click or over time.
+
+                        <br /><br /> This core gameplay loop is the core mechanic of the game and thats why I thought
+                        this
+                        would have been the most fun to learn from as it would be a small basic front end design with
+                        some dynamic changes like hiding buttons on press, changing the value of the score with upgrades
+                        that work overtime and such.
+                    </p>
+
+                    <h2>What I learnt from this</h2>
+                    <p>I learnt a lot from my first ReactNative App, I orginally came up with the idea of making this
+                        part way
+                        through doing a udemy course on the framework and decided that this would be a good half way
+                        point to consilidate
+                        things that I have learnt already throughout the course.
+                        <br /><br />
+                        <b>This includes things like:</b>
+                    <ul>
+                        <li>State and useState and how they can be used to help solve issues but also things like
+                            lifting state.
+                            This helped me learn more about when to use State and when it shouldn't be used and
+                            different practical uses of state
+                        </li>
+                        <li>Components and Props, when is it worth to use component and the uses of props, as you can
+                            see through the image / github repo I have used the Upgrade component a lot <br />
+                            I am still learning more about how to effectivly use props and that should hopefully develop
+                            further in future projects</li>
+                        <li>Styling in ReactNative is simmilar to what I'm used with a web development background but is
+                            also a fair bit different, I still need to improve on my responiveness as I wasn't able to
+                            get it looking consistant on all platforms. There was soome issues with margins on some
+                            Android devices which caused it to come off center</li>
+                        <li>Conditionals was something that took a while to learn the basics of however I think I have
+                            used it properly in my use case here, I have used it to 'hide' the upgrade buttons when
+                            someone has purchased an upgrade. I wanted to get a basic understanding of this concept
+                            because its something used in Web Development but slightly differently so spending the time
+                            to learn this was worth it</li>
+                    </ul>
+                    </p>
+                </div>
+                <img class='putImageHere' src='../../../images/clickerscreenshot.png'>
+                {{>showcaseButton Github='https://github.com/hjp132/clicker-app' Heroku='google'}}
+
+
+
+            </div>
+
+
+
+
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+</body>
+
+
+
+
+
+
+
+
+
+</html>
