@@ -91,6 +91,11 @@ app.get('/projects/clickerapp', (req, res) => {
     })
 });
 
+app.get('/projects/ciuBOT', (req, res) => {
+    res.render('./projects/CIUBot', {
+    })
+});
+
 
 
 

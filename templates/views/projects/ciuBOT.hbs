@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>HJP Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link rel="stylesheet" href="../CSS/style.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/bee9def511.js" crossorigin="anonymous"></script>
+</head>
+
+<body onload="document.body.style.opacity='1'">
+    <div class='main'>
+        <header class='header'>
+            {{>nav}}
+        </header>
+        {{>leftBar}}
+        <div class='projectContent'>
+            <h2>Can I Use? Bot</h2>
+            <p>
+                This is a small simple bot I made during the COVID-19 lockdown.
+            </p>
+            <div class='article'>
+                <div class='blurb'>
+                    <h2>The concept</h2>
+                    <p>This little project's aim was to make a bot that could be used in Slack or in Discord that you
+                        could type
+                        !CIU and then be able to see if you could use certain CSS styling and what browsers support the
+                        feature.
+                        It uses an API from caniuse.com which is a site that lets you see information about each style
+                        property
+                    </p>
+
+                    <h2>What I learnt from this</h2>
+                    <p></b>
+                    <ul>
+                        <li>
+                            I learnt more about how to create and develop bots for Slack and Discord.
+                        </li>
+                        <li>I have learnt a lot in regards how you should treat the user and how to properly design
+                            something that would mean that the user can't break it but also making the process simple
+                            and responsive for the user, making sure that the information given back to them is
+                            something that they want and that the information given is good and also clearly presented
+                        </li>
+                    </ul>
+                    </p>
+                </div>
+                <img class='putImageHere' src='../../../images/clickerscreenshot.png'>
+                {{>showcaseButton Github='https://github.com/hjp132/clicker-app}}
+
+
+
+            </div>
+
+
+
+
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+</body>
+
+
+
+
+
+
+
+
+
+</html>
