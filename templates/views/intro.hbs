@@ -5,35 +5,33 @@
 <head>
 
     <title>HJP Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sen&display=swap" rel="stylesheet">
+    {{!--
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script> --}}
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <link rel="stylesheet" href="CSS/style.css" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/bee9def511.js" crossorigin="anonymous"></script>
 </head>
 
-<body onload="document.body.style.opacity='1'">
+<body>
+    {{>header}}
+    {{>introPage}}
 
-    <div class="content">
-        <section class="intro">
-            {{>leftBar}}
-            <div class='center-intro'>
-                {{>nav}}
-            </div>
-        </section>
-
-
-
-
-
-
-
-
-
+    <div class='aboutPage'>
+        {{!-- try and add 01, 02, 03, 04 etc above each subject header.
+        cool thing for it would be this styling
+        https://stackoverflow.com/questions/4919076/outline-effect-to-text --}}
+        <h1 class='subjectTitle'>About</h1>
+        <p class='subjectSubtext'>
+            I'm a student at Anglia Ruskin University and a Junior Web Developer at <a>SimpleClick</a>. In my spare time
+            I like to go bouldering, play games and work on side projects. Some technologies that I like using are
+            Node.js, React.js, React Native and hopefully more soon! I have been writing code for almost two years.</p>
 
     </div>
 </body>
