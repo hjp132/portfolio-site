@@ -1,4 +1,18 @@
+.section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10%;
+    margin: 100px 0px;
+}
+
+
+
 // intro css
+
+*{
+    box-sizing: border-box;
+}
 .introPage{
     display: flex;
     flex-direction: row;
@@ -58,4 +72,83 @@ body{
     list-style-type: none;
     color: #fff;
     padding: 0;
+}
+
+// work
+
+.image-container{
+    position: relative;
+    overflow: hidden;
+    background: rgba(0,0,0,.05);
+    box-shadow: 0 0 20px rgb(0 0 0 / 20%);
+    display: block;
+    width: 100%;
+    .image-src{
+        width: 100%;
+        border-radius: 3px;
+        transition: all .2s ease-in-out;
+        filter: grayscale(1);
+    }
+}
+.work-wrapper{
+    margin: 0 10%;
+    list-style: none;
+    gap: 20px;
+    flex-wrap: wrap;
+    display: flex;
+    flex-flow: row;
+    margin-top: 30px;
+
+    li div.work-card{
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        padding: 20px 20px 0;
+        background-color: #fff;
+        box-shadow: 0 0 20px rgb(0 0 0 / 16%);
+        border-radius: 3px;
+        cursor: pointer;
+        transition: all .2s ease-in-out;
+    }
+    .text{
+        .title{
+            font-family: "Poppins", sans-serif;
+            font-weight: 700;
+            margin: 0 0 15px;
+            font-size: 1.75em;
+            color: black;
+        }
+        p{
+            font-family: "Sen", sans-serif;
+            color: black;
+            margin:0;
+
+        }
+        .link{
+            font-family: "Sen", sans-serif;
+            color: #298ee0;
+            margin-top: 20px;
+            padding-bottom: 20px;
+            font-weight: 700;
+        }
+    }
+    .image{
+        width: 95%;
+        position: relative;
+        top: -2.5em;
+        left: 50%;
+        transform: translateX(-50%);
+        .image-container{
+            border-radius: 3px;
+        }
+        .tag-list{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            position: absolute;
+            bottom: -11px;
+            color: #fff;
+            background-color: #ff5d5d;
+        }
+    }
 }
