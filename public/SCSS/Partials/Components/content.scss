@@ -8,6 +8,17 @@
     align-items: center;
 }
 
+.linkitem{
+    text-decoration: none;
+    color: #fff;
+    margin: 5px;
+    display: inline;
+    font-size: 90px;
+}
+
+body{
+    margin:0;
+}
 
 .introText{
     text-align: left;
@@ -26,3 +37,25 @@
     margin: 100px 0px;
 }
 
+// contact
+
+.footerContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 10%;
+    align-items: center;
+    background-color: $primary-color;
+}
+
+.contactContainer{
+    text-align: left;
+    width: 50%;
+}
+
+.contactPoints{
+    text-decoration: none;
+    list-style-type: none;
+    color: #fff;
+    padding: 0;
+}

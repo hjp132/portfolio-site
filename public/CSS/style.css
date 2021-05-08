@@ -13,6 +13,14 @@ body {
   margin: 0;
 }
 
+.subjectTitle2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 80px;
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+}
+
 .subjectSubtext {
   font-family: "Sen", sans-serif;
   font-size: 28px;
@@ -53,6 +61,11 @@ body {
   color: #298ee0 !important;
 }
 
+.linkitem2 {
+  text-decoration: none;
+  color: #298ee0;
+}
+
 .headerSocialsChild a {
   font-size: 30px;
   margin: 0 10px;
@@ -80,6 +93,18 @@ body {
   align-items: center;
 }
 
+.linkitem {
+  text-decoration: none;
+  color: #fff;
+  margin: 5px;
+  display: inline;
+  font-size: 90px;
+}
+
+body {
+  margin: 0;
+}
+
 .introText {
   text-align: left;
   width: 50%;
@@ -88,11 +113,31 @@ body {
 .aboutPage {
   display: flex;
   flex-direction: column;
-  background-color: orange;
   align-items: center;
   text-align: center;
   padding: 20px 10%;
   margin: 100px 0px;
+}
+
+.footerContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px 10%;
+  align-items: center;
+  background-color: #298ee0;
+}
+
+.contactContainer {
+  text-align: left;
+  width: 50%;
+}
+
+.contactPoints {
+  text-decoration: none;
+  list-style-type: none;
+  color: #fff;
+  padding: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
