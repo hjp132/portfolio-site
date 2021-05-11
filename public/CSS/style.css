@@ -7,7 +7,7 @@ body {
 
 @font-face {
   font-family: "Geomanist";
-  src: ulr("../fonts/geomanist-regular-webfont.woff") format("woff");
+  src: url("../fonts/geomanist-regular-webfont.woff2") format("woff2"), url("../fonts/geomanist-regular-webfont.woff") format("woff"), url("../fonts/geomanist-regular-webfont.ttf") format("truetype");
 }
 head {
   display: none;
@@ -46,6 +46,11 @@ body {
   font-weight: 700;
   overflow-y: scroll !important;
   overflow-x: hidden;
+}
+
+strong {
+  font-weight: 700;
+  color: #b3a577;
 }
 
 .ready {
@@ -88,6 +93,51 @@ body {
   left: 0;
   width: 100%;
   height: 20px;
+}
+
+.home {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.home .main {
+  position: relative;
+  z-index: 2;
+}
+.home .main .main-wrapper {
+  position: relative;
+  padding-top: 24vh;
+  padding-bottom: 11vw;
+  font-size: calc(10px * 15 * ((100vw - 420px) / 1180));
+}
+.home .main .main-wrapper .main-wrapper-inner {
+  font-size: 2.8em;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.grid-container {
+  max-width: 1400px;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 12vw;
+  padding-right: 12vw;
+}
+.grid-container .text-part {
+  position: relative;
+}
+.grid-container .text-part :first-child {
+  margin-top: 0;
+}
+.grid-container .text-part :last-child {
+  margin-bottom: 0;
+}
+.grid-container .text-part > * {
+  line-height: 1.1;
+}
+.grid-container .text-part * + * {
+  margin-top: 1.1em;
 }
 
 /*# sourceMappingURL=style.css.map */
