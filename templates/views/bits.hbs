@@ -32,9 +32,9 @@
                 </div>
                 <div id='nav-items' class='nav-inner'>
                     <ul>
-                        <li><a class='nav-active' href='/'>HOME</a></li>
+                        <li><a href='/'>HOME</a></li>
                         <li><a href='/about'>ABOUT</a></li>
-                        <li><a href='/bits'>BITS</a></li>
+                        <li><a class='nav-active' href='/bits'>BITS</a></li>
                         <li><a href='/contact'>CONTACT</a></li>
                     </ul>
                 </div>
@@ -49,39 +49,20 @@
                     <div class='main-wrapper-inner'>
                         <div>
                             <section class='grid-container'>
-                                <div class='text-part'>
-                                    <div>
-                                        <div style='text-align: center'>
-                                            <img src='/images/harry.png'>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <br>
-                                    </div>
-                                    <p>
-                                        👋Hello, I am <strong>Harry</strong>, a junior developer 👨‍💻 <strong>from
-                                            Ipswich</strong>,
-                                        currently
-                                        working on a <strong>degree apprenticeship</strong>. I have been enjoying
-                                        learning about web development using <strong>Node.js</strong> and
-                                        <strong>React</strong>. Whe n I am not working on something I am climbing,
-                                        playing on my guitar or playing video games. <br> <br> This portfolio is here to
-                                        show more about me and my work as well as how I've progressed through my
-                                        time as a developer. I currently have <strong>2 years</strong> of experience as
-                                        a developer and I love learning new things.
-
-                                        <br><br>
-
-                                        If you want to talk, feel free to send me an email.
-                                        <br><br>
-                                        <strong>Have a great day.</strong>
-                                    </p>
+                                <div>
+                                    <ul class='grid-clear'>
+                                        {{>workItem link='clickerapp' type='React-Native' name='Clicker App'}}
+                                        {{>workItem link='portfolio' type='Node' name='Portfolio Project'}}
+                                        {{>workItem link='Workout-App' type='React' name='Workout App'}}
+                                        {{>workItem link='Weather App' type='Node' name='Weather App'}}
+                                    </ul>
                                 </div>
                                 <footer class='footer footer-line'>
                                     <div class='grid-container2'>
                                         <nav class='links'>
                                             <ul>
-                                                <li><a target="_blank" href="https://github.com/hjp132">Github</a></li>
+                                                <li><a target="_blank" href="https://github.com/hjp132">Github</a>
+                                                </li>
                                                 <li><a target="_blank" href="https://www.linkedin.com/">Linkedin</a>
                                                 </li>
                                                 <li><a href="/contact">Contact</a></li>
