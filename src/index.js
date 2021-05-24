@@ -56,6 +56,16 @@ app.get('/bits', (req, res) => {
 })
 
 
+app.get('/bits/clickerapp', (req, res) => {
+    res.render('bitItem', {
+        title: 'Clicker App',
+        desc: 'this is a test',
+        repolink: 'test'
+
+    })
+})
+
+
 
 
 

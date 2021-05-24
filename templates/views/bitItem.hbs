@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>HJP Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/bee9def511.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="/css/style.css" </head>
+    <script src='/js/frontend.js'></script>
+
+<body class="ready">
+    <div class='border-left border-line'></div>
+    <div class='border-top border-line'></div>
+    <div class='border-right border-line'></div>
+    <div class='border-bottom border-line'></div>
+    <header class='header'>
+        <div class='header-inner'>
+            <div class='logo'>
+                <a href='/'>
+                    <div class='logoActive'>
+                        <img src='/images/hp.png' width='25' height='26'>
+                    </div>
+                </a>
+            </div>
+            <nav id='nav' class='nav grid-container3'>
+                <div id='nav-icon' class='burger'>
+                    <span onclick="navToggle()" class='nav-icon'>
+                        <i class="fas fa-bars"></i>
+                    </span>
+                </div>
+                <div id='nav-items' class='nav-inner'>
+                    <ul>
+                        <li><a href='/'>HOME</a></li>
+                        <li><a href='/about'>ABOUT</a></li>
+                        <li><a class='nav-active' href='/bits'>BITS</a></li>
+                        <li><a href='/contact'>CONTACT</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class='heightthing'>
+        <div class='page template-page'>
+            <nav class='subnav'>
+                <div class='grid-container'>
+                    <div class='subnav-wrapper'>
+                        <a class='prevLink link' href='{{prevLink}}'>
+                            <span class='arrow right'>
+                                <span class='arrowInner'>
+                                    <span class='arrowline first'></span>
+                                    <span class='arrowline second'></span>
+                                </span>
+                            </span>
+                        </a>
+                        <a class='nextLink link' href='{{prevLink}}'>
+                            <span class='arrow left'>
+                                <span class='arrowInner'>
+                                    <span class='arrowline first'></span>
+                                    <span class='arrowline second'></span>
+                                </span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+            <div class='home'>
+                <section class='main'>
+                    <div class='main-wrapper'>
+                        <div class='main-wrapper-inner'>
+                            <div>
+                                <section class='grid-container'>
+                                    <div class='text'>
+                                        <h1>{{title}}</h1>
+                                    </div>
+                                    <div>
+                                        {{!-- img --}}
+                                    </div>
+                                    <p>{{desc}}</p>
+                                    <p>
+                                        <a href='{{repolink}}'>Repo</a>
+                                    </p>
+                                    <footer class='footer footer-line'>
+                                        <div class='grid-container2'>
+                                            <nav class='links'>
+                                                <ul>
+                                                    <li><a target="_blank" href="https://github.com/hjp132">Github</a>
+                                                    </li>
+                                                    <li><a target="_blank" href="https://www.linkedin.com/">Linkedin</a>
+                                                    </li>
+                                                    <li><a href="/contact">Contact</a></li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                    </footer>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+
+
+
+
+
+
+
+
+</html>
