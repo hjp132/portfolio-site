@@ -49,6 +49,11 @@ app.get('/contact', (req, res) => {
     })
 })
 
+app.get('/bits', (req, res) => {
+    res.render('bits', {
+
+    })
+})
 
 
 

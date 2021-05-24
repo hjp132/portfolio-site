@@ -285,3 +285,70 @@ article, aside, footer, header, nav, section{
         }
     }
 }
+
+.style-list{
+    position: relative;
+    margin: 10vw;
+    display: block;
+}
+
+.item-item{
+    position: relative;
+    display: block;
+    .item-itemText{
+        position: relative;
+        z-index: 2;
+        color: #fefefe;
+        transition: color 270ms ease;
+        padding: 1em 0;
+        .item-itemgrid{
+            max-width: 1400px;
+            margin-left: 0;
+            margin-right: 0;
+            padding-right: 12vw;
+        }
+        .item-itemgridshort{
+            max-width: none;
+            margin-left: 0;
+            margin-right: 0;
+            padding-right: 6vw;
+        }
+        
+    }
+}
+
+.item-itemSubtitle{
+    margin: 0;
+    font-size: 0.375em;
+    margin-bottom: 1em;
+}
+
+.item-itemTitle{
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.grid-clear{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: block;
+    position: relative;
+    li{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: block;
+        position: relative;
+    }
+}
+
+.bit-link{
+    display: block;
+    position: relative;
+}
+
+
+a:hover, .item-itemText:hover{
+    color: #b3a577 !important;
+}
