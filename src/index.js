@@ -59,7 +59,7 @@ app.get('/bits', (req, res) => {
 app.get('/bits/clickerapp', (req, res) => {
     res.render('bitItem', {
         prevLink: './weatherapp',
-        nextLink: './portfolio',
+        nextLink: './totallynormalsite',
         title: 'Clicker App',
         desc: 'This react-native app is my first time dabbling in react-native after spending a good amount of time learning react native through online courses',
         repolink: 'https://github.com/hjp132/clicker-app',
@@ -71,7 +71,7 @@ app.get('/bits/clickerapp', (req, res) => {
 
 app.get('/bits/portfolio', (req, res) => {
     res.render('bitItem', {
-        prevLink: './clickerapp',
+        prevLink: './totallynormalsite',
         nextLink: './workoutapp',
         title: 'Portfolio',
         desc: 'My most recent project was developing this portfolio. This project has had a LOT of work done to it and has multiple different layouts and styles applied through it, for now I am happy with how it is. ',
@@ -106,6 +106,19 @@ app.get('/bits/weatherapp', (req, res) => {
 
     })
 })
+
+app.get('/bits/totallynormalsite', (req, res) => {
+    res.render('bitItem', {
+        prevLink: './clickerapp',
+        nextLink: './portfolio',
+        title: 'Totally Normal Site',
+        desc: 'While I was learning more about user experience and how to make it good, I wanted to put everything I had learned and put it into practice and make the worst UX site possible ( in the form of user signup ).',
+        repolink: 'https://github.com/hjp132/totally-normal-website',
+        try: 'https://totally-normal-site2.herokuapp.com/'
+
+    })
+})
+
 
 // app.get('/bits/clickerapp', (req, res) => {
 //     res.render('bitItem', {
