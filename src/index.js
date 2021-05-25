@@ -64,8 +64,8 @@ app.get('/bits/clickerapp', (req, res) => {
         desc: 'This react-native app is my first time dabbling in react-native after spending a good amount of time learning react native through online courses',
         repolink: 'https://github.com/hjp132/clicker-app',
         images: true,
-        imgurl1: '/images/clickerimg.png'
-
+        colNumber: 'three',
+        imgurl1: '/images/clickerimg.png',
     })
 })
 
@@ -74,7 +74,7 @@ app.get('/bits/portfolio', (req, res) => {
         prevLink: './clickerapp',
         nextLink: './workoutapp',
         title: 'Portfolio',
-        desc: 'My most recent project was developing this portfolio.',
+        desc: 'My most recent project was developing this portfolio. This project has had a LOT of work done to it and has multiple different layouts and styles applied through it, for now I am happy with how it is. ',
         repolink: 'https://github.com/hjp132/portfolio-site'
 
     })
@@ -86,7 +86,9 @@ app.get('/bits/workoutapp', (req, res) => {
         nextLink: './weatherapp',
         title: 'Workout App',
         desc: 'This app allows the user to create/edit workout plans and create thier own in a drag and drop plan system.',
-        repolink: ''
+        repolink: '',
+        images: true,
+        imgurl1: '/images/workoutapp.png'
 
     })
 })
@@ -96,8 +98,11 @@ app.get('/bits/weatherapp', (req, res) => {
         prevLink: './workoutapp',
         nextLink: './clickerapp',
         title: 'Weather App',
+        images: true,
+        imgurl1: '/images/weatherapp.png',
         desc: 'The Weather App was my first project I made in Node.js, it is something that is very simple but helped me learn a lot more about the basics of web development.',
-        repolink: ''
+        repolink: 'https://github.com/hjp132/node3-weather-website',
+        try: 'https://hjp-weatherapp.herokuapp.com/'
 
     })
 })

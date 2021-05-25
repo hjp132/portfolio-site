@@ -76,14 +76,23 @@
                                         <h1>{{title}}</h1>
                                     </div>
                                     {{#if images}}
-                                        <div>
-                                            <img src='{{imgurl1}}'>
+                                    <div>
+                                        <div class='columns {{colNumber}}'>
+                                            <img class='showcaseimage' src='{{imgurl1}}'>
+                                            <img class='showcaseimage' src='{{imgurl2}}'>
+                                            <img class='showcaseimage' src='{{imgurl3}}'>
                                         </div>
+                                    </div>
                                     {{/if}}
                                     <p>{{desc}}</p>
                                     <p>
-                                        <a href='{{repolink}}'>Repo</a>
+                                        <a href='{{repolink}}'>View repo</a>
                                     </p>
+                                    {{#if try}}
+                                    <p>
+                                        <a href='{{try}}'>Try it out</a>
+                                    </p>
+                                    {{/if}}
                                     <footer class='footer footer-line'>
                                         <div class='grid-container2'>
                                             <nav class='links'>

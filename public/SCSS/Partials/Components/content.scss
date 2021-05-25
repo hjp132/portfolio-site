@@ -364,11 +364,10 @@ a:hover, .item-itemText:hover{
 .subnav{
     position: fixed;
     z-index: 10;
-    top: 20vh;
-    left: 0;
+    top: 20.7vh;
     width: 100%;
     pointer-events: none;
-
+    right: 7.1vw;
 }
 
 .subnav-wrapper{
@@ -474,3 +473,8 @@ a:hover, .item-itemText:hover{
     font-weight: 700;
     line-height: 1.1;
     }
+
+
+.showcaseimage{
+    max-width: 650px;
+}
