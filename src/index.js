@@ -58,12 +58,61 @@ app.get('/bits', (req, res) => {
 
 app.get('/bits/clickerapp', (req, res) => {
     res.render('bitItem', {
+        prevLink: './weatherapp',
+        nextLink: './portfolio',
         title: 'Clicker App',
-        desc: 'this is a test',
-        repolink: 'test'
+        desc: 'This react-native app is my first time dabbling in react-native after spending a good amount of time learning react native through online courses',
+        repolink: 'https://github.com/hjp132/clicker-app',
+        images: true,
+        imgurl1: '/images/clickerimg.png'
 
     })
 })
+
+app.get('/bits/portfolio', (req, res) => {
+    res.render('bitItem', {
+        prevLink: './clickerapp',
+        nextLink: './workoutapp',
+        title: 'Portfolio',
+        desc: 'My most recent project was developing this portfolio.',
+        repolink: 'https://github.com/hjp132/portfolio-site'
+
+    })
+})
+
+app.get('/bits/workoutapp', (req, res) => {
+    res.render('bitItem', {
+        prevLink: './portfolio',
+        nextLink: './weatherapp',
+        title: 'Workout App',
+        desc: 'This app allows the user to create/edit workout plans and create thier own in a drag and drop plan system.',
+        repolink: ''
+
+    })
+})
+
+app.get('/bits/weatherapp', (req, res) => {
+    res.render('bitItem', {
+        prevLink: './workoutapp',
+        nextLink: './clickerapp',
+        title: 'Weather App',
+        desc: 'The Weather App was my first project I made in Node.js, it is something that is very simple but helped me learn a lot more about the basics of web development.',
+        repolink: ''
+
+    })
+})
+
+// app.get('/bits/clickerapp', (req, res) => {
+//     res.render('bitItem', {
+//         prevLink: './WeatherApp',
+//         nextLink: './Portfolio',
+//         title: 'Clicker App',
+//         desc: 'this is a test',
+//         repolink: ''
+
+//     })
+// })
+
 
 
 
